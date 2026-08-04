@@ -117,14 +117,15 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
 .section-header p{font-family:var(--font-body);font-size:var(--text-lg);color:var(--muted);margin-top:.75rem;max-width:480px;margin-left:auto;margin-right:auto}
 .cases-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.75rem}
 .case-card{background:var(--surface);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-card);border:1px solid var(--divider)}
-.case-images{display:flex;position:relative}
+.case-images{display:flex;position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:var(--radius) var(--radius) 0 0}
 .case-img{flex:1;aspect-ratio:1/1;background:var(--surface-2);border:1.5px dashed var(--gold-border);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;position:relative;overflow:hidden}
 .case-img+.case-img{border-left:none}
+.case-full-img{width:100%;height:100%;object-fit:cover;object-position:center center}
 .case-tag{position:absolute;top:8px;left:8px;font-family:var(--font-body);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);background:rgba(248,246,241,.9);padding:2px 8px;border-radius:var(--radius-pill);font-weight:600}
 .case-img-note{font-family:var(--font-body);font-size:var(--text-xs);color:var(--muted);text-align:center;line-height:1.4}
 .case-sep{position:absolute;left:50%;top:0;bottom:0;width:2px;background:var(--gold);transform:translateX(-50%);z-index:2;pointer-events:none}
 /* Real images */
-.case-full-img{width:100%;display:block;aspect-ratio:2/1;object-fit:cover}
+.case-full-img{width:100%;display:block;object-fit:cover}
 .case-labels{position:absolute;top:8px;left:0;right:0;display:flex;justify-content:space-between;padding:0 8px;pointer-events:none}
 .case-label{font-family:var(--font-body);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);background:rgba(248,246,241,.9);padding:2px 8px;border-radius:var(--radius-pill);font-weight:600}
 .sobre-photo{overflow:hidden;background:none;border:1.5px solid var(--gold-border)}
