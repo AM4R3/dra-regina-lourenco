@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Dra. Regina Lourenço — Ortodontia · Invisalign Platinum Diamond</title>
 <meta name="description" content="Invisalign Platinum Diamond Top Doctor 2026 com mais de 300 casos tratados em São José dos Pinhais e Curitiba. Atendimento exclusivo particular. Agende sua avaliação gratuita." />
+<link rel="preload" as="image" href="images/regina-kits.webp" fetchpriority="low">
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -46,6 +47,7 @@ html{scroll-behavior:smooth}
 body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
 
 .container{max-width:1160px;margin:0 auto;padding:0 1.5rem}
+@media(min-width:1400px){.container{max-width:1320px}}
 .gold-line{width:24px;height:2px;background:var(--gold);display:block;margin:0 auto .75rem}
 .section-label{font-family:var(--font-body);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.16em;color:var(--gold);margin-bottom:.5rem;display:block}
 .section-title{font-family:var(--font-display);font-weight:400;font-size:var(--text-4xl);line-height:1.15;color:var(--dark)}
@@ -89,7 +91,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
 
 /* ─ HERO ─ */
 #hero{background:var(--dark-2);min-height:100svh;min-height:100vh;padding-top:6rem;padding-bottom:5rem;display:flex;align-items:center;text-align:center;position:relative;overflow:hidden}
-#hero::after{content:'';position:absolute;inset:0;background-image:url('images/regina-kits.jpeg');background-size:cover;background-position:center 35%;opacity:.28;pointer-events:none;z-index:0}
+#hero::after{content:'';position:absolute;inset:0;background-image:url('images/regina-kits.webp');background-size:cover;background-position:center 35%;opacity:.28;pointer-events:none;z-index:0}
 .hero-dots{position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ccircle cx='2' cy='2' r='1.5' fill='%23C9A96E'/%3E%3C/svg%3E");background-size:24px 24px;opacity:.04;pointer-events:none;z-index:1}
 .hero-inner{position:relative;z-index:1;width:100%}
 .hero-badge{display:inline-flex;align-items:center;gap:.4rem;border:1px solid var(--gold-border);border-radius:var(--radius-pill);padding:.3rem .9rem;background:var(--gold-dim);font-family:var(--font-body);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.16em;color:var(--gold);animation:gold-pulse 3s infinite}
@@ -116,7 +118,8 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
 #antes-depois{background:var(--bg);padding:var(--space-section) 0}
 .section-header{text-align:center;margin-bottom:3.5rem}
 .section-header p{font-family:var(--font-body);font-size:var(--text-lg);color:var(--muted);margin-top:.75rem;max-width:480px;margin-left:auto;margin-right:auto}
-.cases-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.75rem}
+.cases-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+@media(max-width:1100px){.cases-grid{grid-template-columns:repeat(2,1fr)}}
 .case-card{background:var(--surface);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-card);border:1px solid var(--divider)}
 .case-images{display:flex;position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:var(--radius) var(--radius) 0 0}
 .case-img{flex:1;aspect-ratio:1/1;background:var(--surface-2);border:1.5px dashed var(--gold-border);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;position:relative;overflow:hidden}
@@ -363,7 +366,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
       <!-- Caso 2 -->
       <div class="case-card reveal" style="transition-delay:.1s">
         <div class="case-images">
-          <img src="images/caso2.jpeg" alt="Antes e depois — Mordida aberta anterior" class="case-full-img">
+          <img src="images/caso2.webp" alt="Antes e depois — Mordida aberta anterior" class="case-full-img" loading="lazy" width="900" height="1600">
           <div class="case-labels">
             <span class="case-label case-label-antes">Antes</span>
             <span class="case-label case-label-depois">Depois</span>
@@ -393,7 +396,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
       <!-- Caso 4 -->
       <div class="case-card reveal" style="transition-delay:.3s">
         <div class="case-images">
-          <img src="images/caso4.jpg" alt="Antes e depois — Apinhamento severo" class="case-full-img">
+          <img src="images/caso4.webp" alt="Antes e depois — Apinhamento severo" class="case-full-img" loading="lazy" width="720" height="1280">
           <div class="case-labels">
             <span class="case-label case-label-antes">Antes</span>
             <span class="case-label case-label-depois">Depois</span>
@@ -423,7 +426,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
     <div class="reels-grid">
 
       <div class="reel-card featured reveal">
-        <video src="images/depoimento-giovana.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <video src="images/depoimento-giovana.mp4" autoplay muted loop playsinline preload="none" poster="images/poster-giovana.webp" class="lazy-video"></video>
         <div class="reel-label">
           <span class="reel-tag">Depoimento real</span>
           <span class="reel-caption">Giovana — tratamento de ortodontia infantil com Invisalign</span>
@@ -431,7 +434,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
       </div>
 
       <div class="reel-card reveal" style="transition-delay:.1s">
-        <video src="images/invisalign-kit-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <video src="images/invisalign-kit-1.mp4" muted loop playsinline preload="none" poster="images/poster-kit1.webp" class="lazy-video"></video>
         <div class="reel-label">
           <span class="reel-tag">Invisalign Doctor</span>
           <span class="reel-caption">Primeiro dia de tratamento — recebendo os alinhadores</span>
@@ -439,7 +442,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
       </div>
 
       <div class="reel-card reveal" style="transition-delay:.2s">
-        <video src="images/invisalign-kit-2.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <video src="images/invisalign-kit-2.mp4" muted loop playsinline preload="none" poster="images/poster-kit2.webp" class="lazy-video"></video>
         <div class="reel-label">
           <span class="reel-tag">Invisalign Doctor</span>
           <span class="reel-caption">A alegria de começar — kit Invisalign em mãos</span>
@@ -471,7 +474,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
           <li>Indicado para adultos e adolescentes (+300 casos)</li>
         </ul>
         <div class="servico-proof">
-          <img src="images/regina-kits.jpeg" alt="Dra. Regina Lourenço no consultório com kits Invisalign — mais de 300 casos tratados" loading="lazy">
+          <img src="images/regina-kits.webp" alt="Dra. Regina Lourenço no consultório com kits Invisalign — mais de 300 casos tratados" loading="lazy" width="1440" height="804">
           <span class="servico-proof-caption">+300 kits Invisalign entregues desde 2017</span>
         </div>
         <a href="https://wa.me/5541984617100?text=Ol%C3%A1!%20Vi%20o%20site%20e%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o%20de%20Invisalign" target="_blank" rel="noopener" class="btn-gold" style="position:relative;z-index:1">Agendar avaliação gratuita →</a>
@@ -581,7 +584,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
   <div class="container">
     <div class="sobre-grid">
       <div class="sobre-photo reveal">
-        <img src="images/regina2.jpeg" alt="Dra. Regina Lourenço — Ortodontista · Invisalign Platinum Diamond">
+        <img src="images/regina2.webp" alt="Dra. Regina Lourenço — Ortodontista · Invisalign Platinum Diamond" loading="lazy" width="700" height="875">
       </div>
 
       <div class="sobre-content reveal" style="transition-delay:.15s">
@@ -736,8 +739,19 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
     }, {threshold: 0.1, rootMargin: '0px 0px -48px 0px'});
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Lazy play videos only when visible
+    const videoIO = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        const v = e.target;
+        if (e.isIntersecting) { v.play().catch(()=>{}); }
+        else { v.pause(); }
+      });
+    }, {threshold: 0.25});
+    document.querySelectorAll('.lazy-video').forEach(v => videoIO.observe(v));
   } else {
     document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+    document.querySelectorAll('.lazy-video').forEach(v => v.play().catch(()=>{}));
   }
 </script>
 </body>
