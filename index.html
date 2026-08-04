@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Dra. Regina Lourenço — Ortodontia · Invisalign Diamond</title>
-<meta name="description" content="Invisalign Diamond com mais de 300 casos tratados em São José dos Pinhais e Curitiba. Atendimento exclusivo particular. Agende sua avaliação gratuita." />
+<title>Dra. Regina Lourenço — Ortodontia · Invisalign Platinum Diamond</title>
+<meta name="description" content="Invisalign Platinum Diamond Top Doctor 2026 com mais de 300 casos tratados em São José dos Pinhais e Curitiba. Atendimento exclusivo particular. Agende sua avaliação gratuita." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -123,6 +123,12 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
 .case-tag{position:absolute;top:8px;left:8px;font-family:var(--font-body);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);background:rgba(248,246,241,.9);padding:2px 8px;border-radius:var(--radius-pill);font-weight:600}
 .case-img-note{font-family:var(--font-body);font-size:var(--text-xs);color:var(--muted);text-align:center;line-height:1.4}
 .case-sep{position:absolute;left:50%;top:0;bottom:0;width:2px;background:var(--gold);transform:translateX(-50%);z-index:2;pointer-events:none}
+/* Real images */
+.case-full-img{width:100%;display:block;aspect-ratio:2/1;object-fit:cover}
+.case-labels{position:absolute;top:8px;left:0;right:0;display:flex;justify-content:space-between;padding:0 8px;pointer-events:none}
+.case-label{font-family:var(--font-body);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);background:rgba(248,246,241,.9);padding:2px 8px;border-radius:var(--radius-pill);font-weight:600}
+.sobre-photo{overflow:hidden;background:none;border:1.5px solid var(--gold-border)}
+.sobre-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
 .case-info{padding:1.25rem 1.5rem}
 .case-info h3{font-family:var(--font-display);font-weight:600;font-size:var(--text-xl);color:var(--dark);margin-bottom:.25rem}
 .case-meta{font-family:var(--font-body);font-size:var(--text-xs);color:var(--muted);display:flex;gap:1rem;flex-wrap:wrap}
@@ -259,7 +265,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
   <div class="hero-dots"></div>
   <div class="container">
     <div class="hero-inner">
-      <div class="hero-badge fade-up d1">✦&nbsp;&nbsp;Invisalign Diamond Doctor &nbsp;·&nbsp; Somente Particular&nbsp;&nbsp;✦</div>
+      <div class="hero-badge fade-up d1">✦&nbsp;&nbsp;Invisalign Platinum Diamond · Top Doctor 2026 &nbsp;·&nbsp; Somente Particular&nbsp;&nbsp;✦</div>
       <h1 class="hero-headline fade-up d2">
         Aquele sorriso <span class="gold">alinhado</span><br>
         que ninguém vai perceber<br>
@@ -314,17 +320,11 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
       <!-- Caso 1 -->
       <div class="case-card reveal">
         <div class="case-images">
-          <div class="case-img">
-            <span class="case-tag">Antes</span>
-            <svg width="28" height="32" viewBox="0 0 28 32" fill="none"><path d="M4 8C4 4.686 6.686 2 10 2h8c3.314 0 6 2.686 6 6v10c0 6.627-4.5 12-10 12S4 24.627 4 18V8z" stroke="#C9A96E" stroke-width="1"/><path d="M10 2s1 6 4 6 4-6 4-6" stroke="#C9A96E" stroke-width="1"/></svg>
-            <span class="case-img-note">Foto caso 1 — Antes<br><!-- /images/invisalign/ANTES DEPOIS 1.webp --></span>
+          <img src="images/caso1.webp" alt="Antes e depois — Apinhamento moderado" class="case-full-img">
+          <div class="case-labels">
+            <span class="case-label">Antes</span>
+            <span class="case-label">Depois</span>
           </div>
-          <div class="case-img">
-            <span class="case-tag" style="left:auto;right:8px">Depois</span>
-            <svg width="28" height="32" viewBox="0 0 28 32" fill="none"><path d="M4 8C4 4.686 6.686 2 10 2h8c3.314 0 6 2.686 6 6v10c0 6.627-4.5 12-10 12S4 24.627 4 18V8z" stroke="#C9A96E" stroke-width="1"/><path d="M10 2s1 6 4 6 4-6 4-6" stroke="#C9A96E" stroke-width="1"/></svg>
-            <span class="case-img-note">Foto caso 1 — Depois<br><!-- /images/invisalign/ANTES DEPOIS 1.webp --></span>
-          </div>
-          <div class="case-sep"></div>
         </div>
         <div class="case-info">
           <h3>Apinhamento moderado</h3>
@@ -335,17 +335,11 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
       <!-- Caso 2 -->
       <div class="case-card reveal" style="transition-delay:.1s">
         <div class="case-images">
-          <div class="case-img">
-            <span class="case-tag">Antes</span>
-            <svg width="28" height="32" viewBox="0 0 28 32" fill="none"><path d="M4 8C4 4.686 6.686 2 10 2h8c3.314 0 6 2.686 6 6v10c0 6.627-4.5 12-10 12S4 24.627 4 18V8z" stroke="#C9A96E" stroke-width="1"/><path d="M10 2s1 6 4 6 4-6 4-6" stroke="#C9A96E" stroke-width="1"/></svg>
-            <span class="case-img-note">Foto caso 2 — Antes<br><!-- /images/invisalign/ANTES DEPOIS 2.webp --></span>
+          <img src="images/caso2.jpeg" alt="Antes e depois — Mordida aberta anterior" class="case-full-img">
+          <div class="case-labels">
+            <span class="case-label">Antes</span>
+            <span class="case-label">Depois</span>
           </div>
-          <div class="case-img">
-            <span class="case-tag" style="left:auto;right:8px">Depois</span>
-            <svg width="28" height="32" viewBox="0 0 28 32" fill="none"><path d="M4 8C4 4.686 6.686 2 10 2h8c3.314 0 6 2.686 6 6v10c0 6.627-4.5 12-10 12S4 24.627 4 18V8z" stroke="#C9A96E" stroke-width="1"/><path d="M10 2s1 6 4 6 4-6 4-6" stroke="#C9A96E" stroke-width="1"/></svg>
-            <span class="case-img-note">Foto caso 2 — Depois<br><!-- /images/invisalign/ANTES DEPOIS 2.webp --></span>
-          </div>
-          <div class="case-sep"></div>
         </div>
         <div class="case-info">
           <h3>Mordida aberta anterior</h3>
@@ -356,17 +350,11 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
       <!-- Caso 3 -->
       <div class="case-card reveal" style="transition-delay:.2s">
         <div class="case-images">
-          <div class="case-img">
-            <span class="case-tag">Antes</span>
-            <svg width="28" height="32" viewBox="0 0 28 32" fill="none"><path d="M4 8C4 4.686 6.686 2 10 2h8c3.314 0 6 2.686 6 6v10c0 6.627-4.5 12-10 12S4 24.627 4 18V8z" stroke="#C9A96E" stroke-width="1"/><path d="M10 2s1 6 4 6 4-6 4-6" stroke="#C9A96E" stroke-width="1"/></svg>
-            <span class="case-img-note">Foto caso 3 — Antes<br><!-- /images/invisalign/ANTES DEPOIS 3.jpg --></span>
+          <img src="images/caso3.webp" alt="Antes e depois — Espaçamento entre dentes" class="case-full-img">
+          <div class="case-labels">
+            <span class="case-label">Antes</span>
+            <span class="case-label">Depois</span>
           </div>
-          <div class="case-img">
-            <span class="case-tag" style="left:auto;right:8px">Depois</span>
-            <svg width="28" height="32" viewBox="0 0 28 32" fill="none"><path d="M4 8C4 4.686 6.686 2 10 2h8c3.314 0 6 2.686 6 6v10c0 6.627-4.5 12-10 12S4 24.627 4 18V8z" stroke="#C9A96E" stroke-width="1"/><path d="M10 2s1 6 4 6 4-6 4-6" stroke="#C9A96E" stroke-width="1"/></svg>
-            <span class="case-img-note">Foto caso 3 — Depois<br><!-- /images/invisalign/ANTES DEPOIS 3.jpg --></span>
-          </div>
-          <div class="case-sep"></div>
         </div>
         <div class="case-info">
           <h3>Espaçamento entre dentes</h3>
@@ -377,17 +365,11 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
       <!-- Caso 4 -->
       <div class="case-card reveal" style="transition-delay:.3s">
         <div class="case-images">
-          <div class="case-img">
-            <span class="case-tag">Antes</span>
-            <svg width="28" height="32" viewBox="0 0 28 32" fill="none"><path d="M4 8C4 4.686 6.686 2 10 2h8c3.314 0 6 2.686 6 6v10c0 6.627-4.5 12-10 12S4 24.627 4 18V8z" stroke="#C9A96E" stroke-width="1"/><path d="M10 2s1 6 4 6 4-6 4-6" stroke="#C9A96E" stroke-width="1"/></svg>
-            <span class="case-img-note">Foto caso 4 — Antes<br><!-- /images/invisalign/ANTES DEPOIS 4.jpg --></span>
+          <img src="images/caso4.jpg" alt="Antes e depois — Apinhamento severo" class="case-full-img">
+          <div class="case-labels">
+            <span class="case-label">Antes</span>
+            <span class="case-label">Depois</span>
           </div>
-          <div class="case-img">
-            <span class="case-tag" style="left:auto;right:8px">Depois</span>
-            <svg width="28" height="32" viewBox="0 0 28 32" fill="none"><path d="M4 8C4 4.686 6.686 2 10 2h8c3.314 0 6 2.686 6 6v10c0 6.627-4.5 12-10 12S4 24.627 4 18V8z" stroke="#C9A96E" stroke-width="1"/><path d="M10 2s1 6 4 6 4-6 4-6" stroke="#C9A96E" stroke-width="1"/></svg>
-            <span class="case-img-note">Foto caso 4 — Depois<br><!-- /images/invisalign/ANTES DEPOIS 4.jpg --></span>
-          </div>
-          <div class="case-sep"></div>
         </div>
         <div class="case-info">
           <h3>Apinhamento severo</h3>
@@ -415,7 +397,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
       <div class="servico-main reveal">
         <span class="servico-main-badge">✦ Especialidade principal</span>
         <h3>Invisalign</h3>
-        <p class="s-desc">Alinhadores removíveis e praticamente invisíveis — tecnologia CAD/CAM que mapeia cada milímetro do seu sorriso antes do tratamento começar. A Dra. Regina é a única Invisalign Diamond Doctor de São José dos Pinhais.</p>
+        <p class="s-desc">Alinhadores removíveis e praticamente invisíveis — tecnologia CAD/CAM que mapeia cada milímetro do seu sorriso antes do tratamento começar. A Dra. Regina é Invisalign Platinum Diamond Top Doctor 2026, o nível mais alto da certificação, com mais de 300 casos tratados em SJP e Curitiba.</p>
         <ul class="servico-main-features">
           <li>Escaneamento digital 3D — sem molde de gesso</li>
           <li>Simulação do resultado antes de iniciar</li>
@@ -504,8 +486,8 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
         <div class="dif-icon">
           <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M11 2l2.5 6.5H20l-5.25 4 1.75 6.5L11 15l-5.5 4 1.75-6.5L2 8.5h6.5L11 2z" stroke="#C9A96E" stroke-width="1.2" stroke-linejoin="round"/></svg>
         </div>
-        <h3>Diamond Doctor</h3>
-        <p>A certificação Diamond da Invisalign é concedida apenas a ortodontistas com volume significativo de casos e resultado comprovado pela plataforma. Não é título de marketing — é rastreamento de performance.</p>
+        <h3>Platinum Diamond Top Doctor 2026</h3>
+        <p>O nível mais alto da Invisalign — concedido a um grupo restrito de ortodontistas com volume excepcional de casos e consistência de resultado comprovada pela plataforma. Não é título de marketing: é rastreamento de performance.</p>
       </div>
       <div class="dif-card reveal" style="transition-delay:.1s">
         <div class="dif-icon">
@@ -530,15 +512,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
   <div class="container">
     <div class="sobre-grid">
       <div class="sobre-photo reveal">
-        <svg width="60" height="78" viewBox="0 0 60 78" fill="none">
-          <circle cx="30" cy="22" r="14" stroke="#C9A96E" stroke-width="1" fill="none"/>
-          <path d="M6 70c0-13.255 10.745-24 24-24s24 10.745 24 24" stroke="#C9A96E" stroke-width="1" fill="none" stroke-linecap="round"/>
-        </svg>
-        <span class="sobre-photo-text">
-          Foto da Dra. Regina<br>
-          <!-- SUBSTITUIR: regina.webp ou "regina 2.jpeg" --><br>
-          <!-- Dimensão ideal: 600×750 px, object-fit: cover -->
-        </span>
+        <img src="images/regina2.jpeg" alt="Dra. Regina Lourenço — Ortodontista · Invisalign Platinum Diamond">
       </div>
 
       <div class="sobre-content reveal" style="transition-delay:.15s">
@@ -546,12 +520,13 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
         <h2 class="section-title">Formada em 2017.<br><em>300 casos depois.</em></h2>
         <p>A Dra. Regina Lourenço se formou em Odontologia e desde o início escolheu uma especialidade só: a Ortodontia. Não por comodidade — por convicção de que dominar uma área é diferente de conhecer várias.</p>
         <p>Em São José dos Pinhais e Curitiba, construiu uma clínica de atendimento exclusivamente particular. Essa escolha não é exclusão — é para garantir o tempo e o nível de cuidado que cada caso precisa.</p>
-        <p>A certificação Diamond da Invisalign chegou depois de mais de 300 casos tratados e documentados. É o rastreamento da plataforma sobre volume e consistência de resultado — não um prêmio de marketing.</p>
+        <p>A certificação Platinum Diamond Top Doctor 2026 da Invisalign é o grau mais alto da plataforma — concedido a um grupo restrito de ortodontistas com volume e consistência de resultado comprovados. Não é marketing: é rastreamento de performance.</p>
         <div class="credentials">
-          <div class="cred-item">Graduação em Odontologia — 2017</div>
-          <div class="cred-item">Especialização em Ortodontia</div>
-          <div class="cred-item">Invisalign Diamond Doctor</div>
+          <div class="cred-item">Graduada em Odontologia — 2017</div>
+          <div class="cred-item">Especialista em Ortodontia e Ortopedia Funcional</div>
+          <div class="cred-item">Invisalign Platinum Diamond Top Doctor 2026</div>
           <div class="cred-item">+300 casos Invisalign documentados</div>
+          <div class="cred-item">CRO-PR 27156</div>
           <div class="cred-item">Atendimento exclusivo particular — SJP e Curitiba</div>
         </div>
       </div>
@@ -631,7 +606,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
     <div class="footer-grid">
       <div class="footer-brand">
         <span class="footer-brand-name">Dra. Regina Lourenço</span>
-        <span class="footer-brand-sub">Ortodontia · Invisalign Diamond</span>
+        <span class="footer-brand-sub">Ortodontia · Invisalign Platinum Diamond Top Doctor 2026</span>
         <p>Atendimento exclusivo particular em São José dos Pinhais e Curitiba. Mais de 300 casos Invisalign desde 2017.</p>
       </div>
       <div class="footer-col">
@@ -659,7 +634,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© <span id="yr"></span> Dra. Regina Lourenço Ortodontia · CRO-PR <!-- SUBSTITUIR: número CRO --></p>
+      <p>© <span id="yr"></span> Dra. Regina Lourenço Ortodontia · CRO-PR 27156</p>
       <div class="footer-social">
         <a href="https://instagram.com/drareginalourenco" target="_blank" rel="noopener" aria-label="Instagram">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
