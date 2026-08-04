@@ -147,6 +147,9 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
 .servico-main-features{list-style:none;display:flex;flex-direction:column;gap:.6rem;margin-bottom:2rem;position:relative;z-index:1}
 .servico-main-features li{font-family:var(--font-body);font-size:var(--text-sm);color:rgba(248,246,241,.80);display:flex;align-items:flex-start;gap:.6rem}
 .servico-main-features li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0;margin-top:.45rem}
+.servico-proof{margin:1.5rem 0 1.75rem;border-radius:calc(var(--radius) - 4px);overflow:hidden;position:relative;z-index:1}
+.servico-proof img{width:100%;aspect-ratio:16/9;object-fit:cover;object-position:center 28%;display:block}
+.servico-proof-caption{display:block;font-family:var(--font-body);font-size:11px;letter-spacing:.06em;color:rgba(201,169,110,.7);text-align:center;padding:.5rem 0 0;text-transform:uppercase}
 .servicos-secondary{display:flex;flex-direction:column;gap:1.25rem}
 .servico-card{background:var(--surface);border-radius:var(--radius);padding:1.75rem;border:1px solid var(--divider);box-shadow:var(--shadow-card)}
 .servico-card-icon{width:40px;height:40px;background:var(--gold-dim);border:1px solid var(--gold-border);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;margin-bottom:1rem}
@@ -464,6 +467,10 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
           <li>Consultas de acompanhamento com a própria Dra. Regina</li>
           <li>Indicado para adultos e adolescentes (+300 casos)</li>
         </ul>
+        <div class="servico-proof">
+          <img src="images/regina-kits.jpeg" alt="Dra. Regina Lourenço no consultório com kits Invisalign — mais de 300 casos tratados" loading="lazy">
+          <span class="servico-proof-caption">+300 kits Invisalign entregues desde 2017</span>
+        </div>
         <a href="https://wa.me/5541984617100?text=Ol%C3%A1!%20Vi%20o%20site%20e%20quero%20agendar%20minha%20avalia%C3%A7%C3%A3o%20de%20Invisalign" target="_blank" rel="noopener" class="btn-gold" style="position:relative;z-index:1">Agendar avaliação gratuita →</a>
       </div>
 
