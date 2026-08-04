@@ -71,9 +71,9 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
 #nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(248,246,241,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--divider);padding:.875rem 0;transition:background .3s ease}
 #nav.scrolled{background:rgba(248,246,241,.98)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;position:relative}
-.nav-logo a{text-decoration:none}
-.nav-logo-name{font-family:var(--font-display);font-weight:400;font-size:var(--text-xl);color:var(--dark);display:block;line-height:1.2}
-.nav-logo-sub{font-family:var(--font-body);font-size:var(--text-xs);color:var(--muted);text-transform:uppercase;letter-spacing:.15em;display:block}
+.nav-logo a{text-decoration:none;display:block}
+.nav-logo-img{height:44px;width:auto;display:block;mix-blend-mode:multiply}
+@media(max-width:768px){.nav-logo-img{height:36px}}
 .nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
 .nav-links a{font-family:var(--font-body);font-size:var(--text-sm);color:var(--muted);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--dark)}
@@ -243,6 +243,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
 /* ─ FOOTER ─ */
 #footer{background:var(--dark);padding:3rem 0 2rem;color:rgba(248,246,241,.55)}
 .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:3rem;margin-bottom:2.5rem}
+.footer-logo{height:48px;width:auto;display:block;margin-bottom:1rem;filter:brightness(0) invert(1);opacity:.85}
 .footer-brand-name{font-family:var(--font-display);font-weight:400;font-size:var(--text-xl);color:#F8F6F1;display:block;margin-bottom:.25rem}
 .footer-brand-sub{font-family:var(--font-body);font-size:var(--text-xs);text-transform:uppercase;letter-spacing:.15em;color:rgba(248,246,241,.4);display:block;margin-bottom:1rem}
 .footer-brand p{font-family:var(--font-body);font-size:var(--text-sm);line-height:1.6}
@@ -271,8 +272,7 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
     <div class="nav-inner">
       <div class="nav-logo">
         <a href="#hero">
-          <span class="nav-logo-name">Dra. Regina Lourenço</span>
-          <span class="nav-logo-sub">Ortodontia · São José dos Pinhais</span>
+          <img src="images/logo.webp" alt="Dra. Regina Lourenço Ortodontia Digital" class="nav-logo-img" width="176" height="63">
         </a>
       </div>
       <ul class="nav-links" id="navLinks">
@@ -673,8 +673,8 @@ body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-he
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <span class="footer-brand-name">Dra. Regina Lourenço</span>
-        <span class="footer-brand-sub">Ortodontia · Invisalign Platinum Diamond Top Doctor 2026</span>
+        <img src="images/logo.webp" alt="Dra. Regina Lourenço Ortodontia Digital" class="footer-logo" width="176" height="63">
+        <span class="footer-brand-sub">Invisalign Platinum Diamond Top Doctor 2026</span>
         <p>Atendimento exclusivo particular em São José dos Pinhais e Curitiba. Mais de 300 casos Invisalign desde 2017.</p>
       </div>
       <div class="footer-col">
